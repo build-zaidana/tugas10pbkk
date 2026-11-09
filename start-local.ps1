@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$taskRuntime = Join-Path $PSScriptRoot '..\..\.runtime'
+$taskRuntime = Join-Path $PSScriptRoot '..\.runtime'
 $taskPhp = Join-Path $taskRuntime 'php84\php.exe'
 if (-not (Test-Path -LiteralPath $taskPhp)) {
     $taskPhp = (Get-Command php -ErrorAction Stop).Source
